@@ -1,12 +1,3 @@
-DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
-USE burgers_db;
-
-CREATE TABLE burgers
-(
-	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	burger_name varchar(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
-	 createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-
-);
+INSERT INTO burgers (burger_name) VALUES ('In n Out Burger');
+INSERT INTO burgers (burger_name) VALUES ('Umami Burger');
+INSERT INTO burgers (burger_name) VALUES ('Everything Burger')
