@@ -1,4 +1,4 @@
-var express = require("express")
+var express = require("express");
 
 var router = express.Router();
 
@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
     ], [
       req.body.burger_name
     ], (data) => {
-      res.redirect('/');
+     res.redirect('/');
     });
   });
   
@@ -34,6 +34,7 @@ router.get('/', (req, res) => {
       devoured: true
     }, condition, (data) => {
       res.redirect('/');
+
     });
   });
   
@@ -44,6 +45,7 @@ router.get('/', (req, res) => {
   
       burger.deleteOne(condition, (data) => {
         res.redirect('/');
+
       });
     });
   

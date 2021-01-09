@@ -11,8 +11,7 @@ var burger = {
       });
     },
   
-    // Insert a new burger into the database
-    // (the variables cols and vals are arrays)
+ // put burg into database
     insertOne: (cols, vals, cb) => {
       orm.insertOne('burgers', cols, vals, (res) => {
         cb(res);

@@ -1,6 +1,7 @@
 // Required dependencies
 var express = require("express");
 var exphbs = require("express-handlebars");
+var methodOverride = require('method-override');
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
@@ -20,10 +21,12 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// Override with POST having ?_method=DELETE
+app.use(methodOverride('_method'));
 
 // Import routes and give the server access to them
-var routes = require('./controllers/burgers_controller.js');
-app.use('/', routes);
+var routes = require('./controllers/burgers_controllers.js');
+app.use(routes);
 
 // Start our server so it can listen for requests from the client
 app.listen(PORT, () => {
