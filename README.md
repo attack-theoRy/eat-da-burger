@@ -13,7 +13,7 @@ by Pirooz Wallace
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
-Deployed Heroku App: [App on Heroku](https://secret-coast-46631.herokuapp.com/)
+Deployed Heroku App: [App on Heroku](https://still-garden-09395.herokuapp.com/)
 
 GitHub Repo: [Eat Da Burger Repo](https://github.com/attack-theoRy/eat-da-burger)
 
