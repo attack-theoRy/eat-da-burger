@@ -1,11 +1,6 @@
-# eat-da-burger
+# Eat-Da-Burger
  A burger logger created with MySQL, Node, Express and Handlebars
 
-
-
-
-
-## Employee Tracker
 
 by Pirooz Wallace
 1/9/21
@@ -38,16 +33,19 @@ Portfolio: [Portfolio](https://attack-theory.github.io/Portfolio/)
 
 ## Description
 
-This is a full-stack app that uses Node.js, MySQL, Express routes, express handlebars and heroku to add and then log burgers you have eaten from a database. 
+This is a full-stack app that uses Node.js, MySQL, Express routes, express handlebars and heroku to add and then log burgers you have eaten from a database. You start by either adding your own burger to the list using the submit form or by devouring what's already there. 
 
-![MainSample](MainSample.PNG)
+![MainSample](BurgerStart.PNG)
 
+You click on the utensil icon to devour the burger and put it in the devoured list
+
+![DevourBurger](DevourBurger.PNG)
 
 
 
 ## Installation
 
-The app can be found with no installation needed on heroku at :  https://secret-coast-46631.herokuapp.com/
+The app can be found with no installation needed on heroku at :  https://still-garden-09395.herokuapp.com/
 Or to use through terminal do the following:
 To use properly you need to install Node.js and in the terminal you have to use the command 
 ``` npm init -y ```
