@@ -31,6 +31,18 @@
 <!-- delete button -->
 <script type="text/javascript">
 
+ $(".devourThis").on("click", function(event) {
+    event.preventDefault();
+
+    var id = $(this).data("id");
+
+    // Send the DELETE request.
+    $.ajax({
+      type: "PUT",
+      url: "/burgers/" + id
+    }).then(location.reload());
+  });
+
 // Function to delete a burger when the trash can icon is clicked.
   $(".delete-burger").on("click", function(event) {
     event.preventDefault();

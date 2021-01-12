@@ -39,7 +39,7 @@ This is a full-stack app that uses Node.js, MySQL, Express routes, express handl
 
 You click on the utensil icon to devour the burger and put it in the devoured list
 
-![DevourBurger](DevourBurger.PNG)
+![DevourBurger](DevourBurger.png)
 
 
 

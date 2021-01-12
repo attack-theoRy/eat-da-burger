@@ -11,6 +11,8 @@ router.get('/', (req, res) => {
       var hbsObject = {
         burgers: data
       };
+
+      console.log("selecting all");
       res.render('index', hbsObject);
     });
   });
@@ -29,6 +31,8 @@ router.get('/', (req, res) => {
   // A PUT route to update a burger's devoured status
   router.put('/burgers/:id', (req, res) => {
     var condition = 'id = ' + req.params.id;
+
+    console.log("update to devoured");
   
     burger.updateOne({
       devoured: true

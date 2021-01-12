@@ -31,8 +31,8 @@
     {{#each burgers}}
     {{#unless this.devoured}}
     <li class="list-group-item">{{this.burger_name}}
-    <form id="ready" action="/burgers/{{this.id}}?_method=PUT" method="POST">
-    <button type="submit" class="btn btn-success"><i class="fa fa-cutlery" aria-hidden="true"></i>
+    
+    <button type="submit" class="btn btn-success devourThis" data-id="{{this.id}}"><i class="fa fa-cutlery" aria-hidden="true" ></i>
 </button>
     </form>    
     </li>
@@ -41,7 +41,7 @@
   </ul>
 </div>    
 </div>
-<!-- End burger-ready side -->
+
 n    
 <!-- Start devoured burger side -->
     <div class="col">
